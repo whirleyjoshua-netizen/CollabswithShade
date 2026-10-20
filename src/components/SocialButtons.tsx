@@ -68,12 +68,15 @@ export function SocialDiscs({ className = "" }: { className?: string }) {
 const pill =
   "flex w-[14.5rem] items-center gap-2.5 rounded-full border border-gold/70 bg-gradient-to-b from-white to-cream py-1.5 pr-4 pl-1.5 shadow-[0_6px_16px_-6px_rgba(90,60,30,0.35)] transition hover:-translate-y-0.5";
 
-function PillContent({ icon, label }: { icon: Icon; label: string }) {
+function PillContent({ icon, label, handle, small }: { icon: Icon; label: string; handle?: string; small?: boolean }) {
   return (
     <>
       <Disc icon={icon} size="sm" />
       <span className="h-7 w-px bg-gold/60" aria-hidden="true" />
-      <span className="min-w-0 flex-1 text-left text-[0.8rem] font-medium uppercase tracking-[0.22em] text-ink">{label}</span>
+      <span className="min-w-0 flex-1 text-left">
+        <span className="block text-[0.8rem] font-medium uppercase tracking-[0.22em] text-ink">{label}</span>
+        {handle && <span className={`block truncate text-muted ${small ? "text-[0.5rem] tracking-tight" : "text-[0.72rem]"}`}>{handle}</span>}
+      </span>
       <svg viewBox="0 0 24 24" className="h-4 w-4 fill-none stroke-ink" strokeWidth={2} aria-hidden="true"><path d="m9 6 6 6-6 6" /></svg>
     </>
   );
@@ -83,7 +86,7 @@ function PillContent({ icon, label }: { icon: Icon; label: string }) {
 export function EmailPill({ className = "" }: { className?: string }) {
   return (
     <Link href="/contact" className={`${pill} ${className}`}>
-      <PillContent icon="email" label="Email me" />
+      <PillContent icon="email" label="Email me" handle={site.email} small />
     </Link>
   );
 }
@@ -94,7 +97,7 @@ export function SocialPills({ className = "" }: { className?: string }) {
     <div className={`flex flex-wrap justify-center gap-3 ${className}`}>
       {site.socials.map((s) => (
         <a key={s.label} href={s.href} target="_blank" rel="noreferrer" className={pill}>
-          <PillContent icon={s.icon} label={s.label} />
+          <PillContent icon={s.icon} label={s.label} handle={s.handle} />
         </a>
       ))}
     </div>

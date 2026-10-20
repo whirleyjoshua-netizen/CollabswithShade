@@ -60,7 +60,7 @@ function VideoGrid({ videos, className }: { videos: Video[]; className: string }
             <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-mocha">{v.category}</span>
             <p className="mt-0.5 text-sm font-semibold leading-snug">{v.title}</p>
             <a href={v.url} target="_blank" rel="noreferrer" className="text-sm text-muted hover:text-ink">
-              {v.views} views
+              {v.views ? `${v.views} views` : "Watch on Instagram"}
             </a>
           </figcaption>
         </figure>
@@ -217,7 +217,7 @@ export default function Home() {
         <Sparkle className="absolute top-28 right-[9%] h-4 w-4" />
         <div className="mx-auto max-w-6xl px-5">
           <SectionTitle title="Featured Collaborations" script="A collection of my brand content" center />
-          <VideoGrid videos={site.brandVideos} className="mx-auto max-w-4xl md:grid-cols-3" />
+          <VideoGrid videos={site.brandVideos} className="md:grid-cols-4" />
         </div>
       </section>
 

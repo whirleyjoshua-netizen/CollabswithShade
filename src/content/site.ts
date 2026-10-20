@@ -8,10 +8,11 @@ export const site = {
   email: "collabswithshade@gmail.com",
   location: "Las Vegas, NV",
   // Shown as the round buttons under the location and the oval buttons under "Let's Connect".
+  // The handle shows under the name on the oval buttons only.
   socials: [
-    { label: "Instagram", icon: "instagram", href: "https://www.instagram.com/shademomodu/" },
-    { label: "Facebook", icon: "facebook", href: "https://www.facebook.com/folashade.momodu" },
-    { label: "TikTok", icon: "tiktok", href: "https://www.tiktok.com/@shademomodu" },
+    { label: "Instagram", handle: "@shademomodu", icon: "instagram", href: "https://www.instagram.com/shademomodu/" },
+    { label: "Facebook", handle: "Folashade Momodu", icon: "facebook", href: "https://www.facebook.com/folashade.momodu" },
+    { label: "TikTok", handle: "@shademomodu", icon: "tiktok", href: "https://www.tiktok.com/@shademomodu" },
   ],
 
   hero: {
@@ -45,42 +46,44 @@ export const site = {
     poster: "/videos/allergy-mom.jpg",
     url: "https://www.instagram.com/reel/DeVmd5apWRV/",
     stats: [
-      { value: "202K", label: "Views (IG + FB)" },
-      { value: "94.7K", label: "Accounts reached" },
-      { value: "5.4K", label: "Likes" },
-      { value: "99.5%", label: "Non-follower reach" },
+      { value: "191.8K", label: "Views" },
+      { value: "95K", label: "Viewers" },
+      { value: "5.5K", label: "Likes" },
+      { value: "855", label: "Profile visits" },
     ],
   },
 
   // "Brands I've had the pleasure of working with": the brand videos, in a row.
   // Entries with an empty src show a placeholder card linking to the post.
+  // Leave views empty to show "Watch on Instagram" instead of a count.
   brandVideos: [
-    { title: "Little wins with sensitive skin", category: "Ocean Olive", views: "27.2K", url: "https://www.instagram.com/reel/DWotw6DgEYc/", src: "/videos/ocean-olive-little-wins.mp4", poster: "/videos/ocean-olive-little-wins.jpg" },
-    { title: "Finally, swimwear that protects her skin", category: "Chilli Swim", views: "7.2K", url: "https://www.instagram.com/reel/Dai0aeAB998/", src: "/videos/chilli-swim-pool-days.mp4", poster: "/videos/chilli-swim-pool-days.jpg" },
-    { title: "Mom life: special fruit wash, no regrets", category: "Renovera", views: "3.9K", url: "https://www.instagram.com/reel/DZA-QwWhbrZ/", src: "/videos/renovera-fruit-wash.mp4", poster: "/videos/renovera-fruit-wash.jpg" },
+    { title: "Little wins with sensitive skin", category: "Ocean Olive", views: "25.9K", url: "https://www.instagram.com/reel/DWotw6DgEYc/", src: "/videos/ocean-olive-little-wins.mp4", poster: "/videos/ocean-olive-little-wins.jpg" },
+    { title: "Finally, swimwear that protects her skin", category: "Chilli Swim", views: "5.2K", url: "https://www.instagram.com/reel/Dai0aeAB998/", src: "/videos/chilli-swim-pool-days.mp4", poster: "/videos/chilli-swim-pool-days.jpg" },
+    { title: "The perfect eczema-friendly swimsuit doesn’t exist… or does it?", category: "Chilli Swim", views: "4.5K", url: "https://www.instagram.com/reel/Da04fFBhvM_/", src: "/videos/chilli-swim-eczema-swimsuit.mp4", poster: "/videos/chilli-swim-eczema-swimsuit.jpg" },
+    { title: "Mom life: special fruit wash, no regrets", category: "Renovera", views: "2.4K", url: "https://www.instagram.com/reel/DZA-QwWhbrZ/", src: "/videos/renovera-fruit-wash.mp4", poster: "/videos/renovera-fruit-wash.jpg" },
   ],
 
   // "No brief, just creativity": her own videos, no brand behind them.
   creativeVideos: [
-    { title: "Eczema mama in the summertime", category: "Eczema journey", views: "32.9K", url: "https://www.instagram.com/reel/DWCC4NPicqe/", src: "/videos/eczema-summer.mp4", poster: "/videos/eczema-summer.jpg" },
-    { title: "To the mama up all night researching", category: "Motherhood", views: "41.5K", url: "https://www.instagram.com/reel/DaYPPtxJJam/", src: "/videos/mama-up-all-night.mp4", poster: "/videos/mama-up-all-night.jpg" },
-    { title: "Advocating for my baby", category: "Motherhood", views: "21.3K", url: "https://www.instagram.com/reel/DYpWFwkBGOG/", src: "/videos/advocating-for-my-baby.mp4", poster: "/videos/advocating-for-my-baby.jpg" },
-    { title: "The good-skin-day gamble", category: "Eczema journey", views: "21.3K", url: "https://www.instagram.com/reel/DWiEG2gid89/", src: "/videos/good-skin-day.mp4", poster: "/videos/good-skin-day.jpg" },
+    { title: "Eczema mama in the summertime", category: "Eczema journey", views: "30.4K", url: "https://www.instagram.com/reel/DWCC4NPicqe/", src: "/videos/eczema-summer.mp4", poster: "/videos/eczema-summer.jpg" },
+    { title: "To the mama up all night researching", category: "Motherhood", views: "22.9K", url: "https://www.instagram.com/reel/DaYPPtxJJam/", src: "/videos/mama-up-all-night.mp4", poster: "/videos/mama-up-all-night.jpg" },
+    { title: "Advocating for my baby", category: "Motherhood", views: "19K", url: "https://www.instagram.com/reel/DYpWFwkBGOG/", src: "/videos/advocating-for-my-baby.mp4", poster: "/videos/advocating-for-my-baby.jpg" },
+    { title: "The good-skin-day gamble", category: "Eczema journey", views: "17.7K", url: "https://www.instagram.com/reel/DWiEG2gid89/", src: "/videos/good-skin-day.mp4", poster: "/videos/good-skin-day.jpg" },
   ],
 
   // Photos on the purple-and-gold film strip on the contact page.
   // Put photos in public/images/film/ and list them here with their pixel size
   // (width w, height h), so each frame matches the photo's shape.
   filmPhotos: [
-    { src: "/images/film/film-01.jpg", w: 1050, h: 1400 },
+    { src: "/images/film/film-01.jpg", w: 960, h: 1280 },
     { src: "/images/shade-hero.jpg", w: 1152, h: 2048 },
-    { src: "/images/film/film-02.jpg", w: 1400, h: 1144 },
+    { src: "/images/film/film-02.jpg", w: 768, h: 628 },
     { src: "/images/film/film-03.jpg", w: 787, h: 1400 },
     { src: "/images/film/film-04.jpg", w: 787, h: 1400 },
-    { src: "/images/film/film-05.jpg", w: 787, h: 1400 },
+    { src: "/images/film/film-05.jpg", w: 720, h: 1280 },
     { src: "/images/film/film-06.jpg", w: 787, h: 1400 },
-    { src: "/videos/advocating-for-my-baby.jpg", w: 720, h: 1280 },
-    { src: "/videos/good-skin-day.jpg", w: 640, h: 1136 },
+    { src: "/images/film/film-07.jpg", w: 909, h: 1083 },
+    { src: "/images/film/film-08.jpg", w: 694, h: 959 },
   ],
 
   // "My Creative Process", shown in order, left to right.
