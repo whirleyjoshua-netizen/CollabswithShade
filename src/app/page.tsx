@@ -101,7 +101,7 @@ export default function Home() {
   return (
     <main className="flex-1 overflow-x-clip">
       {/* Cover */}
-      <section className="relative">
+      <section className="ombre relative">
         <Wash className="-top-24 -left-32 h-80 w-80" />
         <Wash className="-right-24 top-10 h-72 w-72 bg-lavender/40" />
         <Sparkle className="absolute top-14 left-[12%] h-8 w-8 sm:h-10 sm:w-10" />
@@ -130,7 +130,7 @@ export default function Home() {
       </section>
 
       {/* 01 Hi, I'm Shadé */}
-      <section id="about" className="relative border-t border-taupe/50 bg-gradient-to-br from-cream via-cream to-lavender-light py-20">
+      <section id="about" className="ombre relative py-20">
         <Wash className="right-0 -bottom-20 h-96 w-96" />
         <div className="relative mx-auto grid max-w-6xl items-center gap-10 px-5 md:grid-cols-[3fr_2fr] md:gap-14">
           <div className="text-center md:text-left">
@@ -159,7 +159,7 @@ export default function Home() {
       </section>
 
       {/* 02 In good company */}
-      <section id="brands" className="relative py-20">
+      <section id="brands" className="ombre relative py-20">
         <Sparkle className="absolute top-16 right-[14%] h-8 w-8" />
         <Sparkle className="absolute top-28 right-[11%] h-4 w-4" />
         <div className="mx-auto max-w-6xl px-5">
@@ -169,7 +169,7 @@ export default function Home() {
               <a key={b.name} href={b.url} target="_blank" rel="noreferrer" className="group flex w-24 flex-col items-center gap-3">
                 <span className="relative flex h-24 w-24 items-center justify-center overflow-hidden rounded-full bg-white shadow-md ring-4 ring-lavender-light transition group-hover:-translate-y-1 group-hover:ring-lavender">
                   {b.logo ? (
-                    <Image src={b.logo} alt={b.name} fill className="object-cover" sizes="6rem" />
+                    <Image src={b.logo} alt={b.name} fill className={"fit" in b && b.fit === "contain" ? "object-contain p-1.5" : "object-cover"} sizes="6rem" />
                   ) : (
                     <span className="font-title text-2xl text-mocha">{initials(b.name)}</span>
                   )}
@@ -182,7 +182,7 @@ export default function Home() {
       </section>
 
       {/* 03 Where experience meets impact */}
-      <section id="impact" className="relative bg-gradient-to-bl from-lavender-light via-cream to-cream py-20">
+      <section id="impact" className="ombre relative py-20">
         <Wash className="-top-10 -right-20 h-80 w-80" />
         <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-5 md:grid-cols-[3fr_2fr] md:gap-16">
           <div>
@@ -212,7 +212,7 @@ export default function Home() {
       </section>
 
       {/* 04 Featured collaborations */}
-      <section id="work" className="relative py-20">
+      <section id="work" className="ombre relative py-20">
         <Sparkle className="absolute top-14 right-[12%] h-9 w-9" />
         <Sparkle className="absolute top-28 right-[9%] h-4 w-4" />
         <div className="mx-auto max-w-6xl px-5">
@@ -222,7 +222,7 @@ export default function Home() {
       </section>
 
       {/* 05 No brief, just creativity */}
-      <section id="creative" className="relative bg-gradient-to-tr from-lavender-light via-cream to-cream py-20">
+      <section id="creative" className="ombre relative py-20">
         <Wash className="-bottom-24 -left-24 h-96 w-96" />
         <Sparkle className="absolute top-16 left-[8%] h-8 w-8" />
         <Sparkle className="absolute top-32 left-[12%] h-4 w-4" />
@@ -233,7 +233,7 @@ export default function Home() {
       </section>
 
       {/* 06 My creative process */}
-      <section id="process" className="relative py-20">
+      <section id="process" className="ombre relative py-20">
         <div className="mx-auto max-w-6xl px-5">
           <SectionTitle title="My Creative Process" script="Thoughtful content, intentionally created." center />
           <ol className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">

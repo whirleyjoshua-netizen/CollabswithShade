@@ -40,3 +40,22 @@ body {
   font-family: var(--font-heading);
   letter-spacing: 0.005em;
 }
+
+/* Each section fades from cream to lavender at its bottom edge, so sections read as divided. */
+@utility ombre {
+  background: linear-gradient(to bottom, var(--cream) 0%, var(--cream) 45%, var(--lavender-light) 85%, color-mix(in srgb, var(--lavender) 55%, var(--lavender-light)) 100%);
+}
+
+/* The contact page film strip scrolls sideways forever. */
+@keyframes film-roll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@utility animate-film {
+  animation: film-roll 60s linear infinite;
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
+}

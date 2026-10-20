@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import { site } from "@/content/site";
 import { ContactForm } from "@/components/ContactForm";
 import { Heart, Sparkle, Wash } from "@/components/Decor";
+import { FilmStrip } from "@/components/FilmStrip";
 
 export const metadata: Metadata = {
-  title: `Email ${site.name} | ${site.fullName}`,
+  title: "Contact | Collabs with Shadé",
 };
 
 export default function ContactPage() {
@@ -19,7 +20,11 @@ export default function ContactPage() {
       <Sparkle className="absolute top-[45%] right-[10%] h-9 w-9" />
       <Sparkle className="absolute top-[52%] right-[14%] h-4 w-4" />
       <Sparkle className="absolute bottom-24 left-[10%] h-7 w-7" />
-      <section className="relative mx-auto max-w-2xl px-5 py-16 sm:py-24">
+      {/* The film runs across the middle of the page, behind the form. */}
+      <div className="absolute inset-x-0 top-[58%] -translate-y-1/2">
+        <FilmStrip photos={site.filmPhotos} />
+      </div>
+      <section className="relative z-10 mx-auto max-w-2xl px-5 py-16 sm:py-24">
         <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-mocha">Contact</p>
         <h1 className="font-title uppercase tracking-wide text-4xl sm:text-5xl">
           Let&apos;s work together
@@ -28,7 +33,7 @@ export default function ContactPage() {
         <p className="mt-4 mb-10 text-lg text-muted">
           Have a brand, product, or idea you&rsquo;d love to bring to life? Tell me a little about it! I&rsquo;m always excited to explore new collaborations and create something special together.
         </p>
-        <div className="rounded-3xl border border-lavender/60 bg-white/60 p-6 shadow-[0_20px_50px_-25px_rgba(120,90,150,0.45)] backdrop-blur-sm sm:p-8">
+        <div className="rounded-3xl border border-lavender/60 bg-white/85 p-6 shadow-[0_20px_50px_-25px_rgba(120,90,150,0.45)] backdrop-blur-sm sm:p-8">
           <ContactForm email={site.email} />
         </div>
       </section>

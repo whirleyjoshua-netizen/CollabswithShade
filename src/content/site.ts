@@ -23,13 +23,12 @@ export const site = {
   // Each brand shows as a circle that links to the brand. Links go to the brand's
   // Instagram for now; swap in their website when you have it.
   // Put logos in public/images/brands/ and set logo to e.g. "/images/brands/acme.png".
-  // Without a logo, the circle shows the brand's initials.
+  // Without a logo, the circle shows the brand's initials. Wide logos: add fit: "contain".
   brands: [
     { name: "Ocean Olive", url: "https://www.instagram.com/ocean_olive_/", logo: "/images/brands/ocean-olive.jpg" },
     { name: "Chilli Swim", url: "https://www.instagram.com/chilliswimwear/", logo: "/images/brands/chilli-swim.jpg" },
     { name: "Renovera", url: "https://www.instagram.com/the_renoveraworld.official/", logo: "/images/brands/renovera.jpg" },
-    { name: "Miss Mouth's", url: "https://www.instagram.com/missmouths/", logo: "/images/brands/miss-mouths.jpg" },
-    { name: "Mama Chai's", url: "https://www.instagram.com/mamachais/", logo: "/images/brands/mama-chais.jpg" },
+    { name: "Mama Bird", url: "https://www.lovemamabird.com/", logo: "/images/brands/mama-bird.png", fit: "contain" },
   ],
 
   // The premier video, shown large with its stats (from Instagram Insights, Oct 2026).
@@ -67,6 +66,21 @@ export const site = {
     { title: "To the mama up all night researching", category: "Motherhood", views: "41.5K", url: "https://www.instagram.com/reel/DaYPPtxJJam/", src: "/videos/mama-up-all-night.mp4", poster: "/videos/mama-up-all-night.jpg" },
     { title: "Advocating for my baby", category: "Motherhood", views: "21.3K", url: "https://www.instagram.com/reel/DYpWFwkBGOG/", src: "/videos/advocating-for-my-baby.mp4", poster: "/videos/advocating-for-my-baby.jpg" },
     { title: "The good-skin-day gamble", category: "Eczema journey", views: "21.3K", url: "https://www.instagram.com/reel/DWiEG2gid89/", src: "/videos/good-skin-day.mp4", poster: "/videos/good-skin-day.jpg" },
+  ],
+
+  // Photos on the purple-and-gold film strip on the contact page.
+  // Put photos in public/images/film/ and list them here with their pixel size
+  // (width w, height h), so each frame matches the photo's shape.
+  filmPhotos: [
+    { src: "/images/film/film-01.jpg", w: 1050, h: 1400 },
+    { src: "/images/shade-hero.jpg", w: 1152, h: 2048 },
+    { src: "/images/film/film-02.jpg", w: 1400, h: 1144 },
+    { src: "/images/film/film-03.jpg", w: 787, h: 1400 },
+    { src: "/images/film/film-04.jpg", w: 787, h: 1400 },
+    { src: "/images/film/film-05.jpg", w: 787, h: 1400 },
+    { src: "/images/film/film-06.jpg", w: 787, h: 1400 },
+    { src: "/videos/advocating-for-my-baby.jpg", w: 720, h: 1280 },
+    { src: "/videos/good-skin-day.jpg", w: 640, h: 1136 },
   ],
 
   // "My Creative Process", shown in order, left to right.

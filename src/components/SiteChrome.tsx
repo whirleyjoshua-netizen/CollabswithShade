@@ -13,7 +13,7 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-20 border-b border-taupe/60 bg-cream/90 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3">
-        <Link href="/" className="font-script text-4xl leading-none text-ink">Shadé</Link>
+        <Link href="/" className="font-script text-3xl leading-none whitespace-nowrap text-ink sm:text-4xl">Collabs with Shadé</Link>
         <nav className="hidden gap-8 text-xs font-semibold uppercase tracking-[0.2em] sm:flex">
           {nav.map((n) => (
             <Link key={n.href} href={n.href} className="hover:text-mocha">{n.label}</Link>

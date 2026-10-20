@@ -29,7 +29,7 @@ const body = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: `${site.fullName} | ${site.tagline}`,
+  title: `Collabs with Shadé | ${site.tagline}`,
   description: site.hero.bio,
 };
 
