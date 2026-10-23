@@ -46,10 +46,10 @@ export const site = {
     poster: "/videos/allergy-mom.jpg",
     url: "https://www.instagram.com/reel/DeVmd5apWRV/",
     stats: [
-      { value: "191.8K", label: "Views" },
-      { value: "95K", label: "Viewers" },
-      { value: "5.5K", label: "Likes" },
-      { value: "855", label: "Profile visits" },
+      { value: "206.7K", label: "Views" },
+      { value: "101.5K", label: "Viewers" },
+      { value: "6.2K", label: "Likes" },
+      { value: "939", label: "Profile visits" },
     ],
   },
 
