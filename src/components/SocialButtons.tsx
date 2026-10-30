@@ -52,13 +52,13 @@ function Disc({ icon, size }: { icon: Icon; size: "lg" | "sm" }) {
   );
 }
 
-/** The round buttons under the location at the top. */
-export function SocialDiscs({ className = "" }: { className?: string }) {
+/** The round social buttons: large under the location on the profile, small on the link hub. */
+export function SocialDiscs({ className = "", size = "lg" }: { className?: string; size?: "lg" | "sm" }) {
   return (
-    <div className={`flex justify-center gap-5 sm:gap-8 ${className}`}>
+    <div className={`flex justify-center ${size === "lg" ? "gap-5 sm:gap-8" : "gap-3"} ${className}`}>
       {site.socials.map((s) => (
         <a key={s.label} href={s.href} target="_blank" rel="noreferrer" aria-label={s.label} className="transition hover:-translate-y-1">
-          <Disc icon={s.icon} size="lg" />
+          <Disc icon={s.icon} size={size} />
         </a>
       ))}
     </div>

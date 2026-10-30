@@ -2,11 +2,12 @@ import Link from "next/link";
 import { site } from "@/content/site";
 
 const nav = [
-  { href: "/#about", label: "About" },
-  { href: "/#brands", label: "Brands" },
-  { href: "/#work", label: "Work" },
-  { href: "/#process", label: "Process" },
-  { href: "/#contact", label: "Contact" },
+  { href: "/profile#about", label: "About" },
+  { href: "/profile#brands", label: "Brands" },
+  { href: "/profile#work", label: "Work" },
+  { href: "/profile#process", label: "Process" },
+  { href: "/my-world", label: "My World" },
+  { href: "/profile#contact", label: "Contact" },
 ];
 
 export function SiteHeader() {

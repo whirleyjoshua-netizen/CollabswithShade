@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Anton, Lora, Montserrat, Sacramento } from "next/font/google";
 import { site } from "@/content/site";
-import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 import "./globals.css";
 
 const display = Lora({
@@ -37,9 +36,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${display.variable} ${script.variable} ${title.variable} ${body.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col font-sans">
-        <SiteHeader />
         {children}
-        <SiteFooter />
       </body>
     </html>
   );
