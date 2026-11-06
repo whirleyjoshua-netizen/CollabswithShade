@@ -6,7 +6,6 @@ const nav = [
   { href: "/profile#brands", label: "Brands" },
   { href: "/profile#work", label: "Work" },
   { href: "/profile#process", label: "Process" },
-  { href: "/my-world", label: "My World" },
   { href: "/profile#contact", label: "Contact" },
 ];
 

@@ -1,7 +1,4 @@
 // Everything on the link-in-bio home page (/). Edit this file to change it.
-//
-// A link with an empty href is hidden, so you can list everything she might
-// want now and fill each one in when it's ready.
 
 export type LinkIcon = "briefcase" | "file" | "book" | "bag" | "tag" | "play" | "amazon" | "heart" | "mail" | "star";
 
@@ -13,39 +10,28 @@ export type HubLink = {
   highlight?: boolean; // lavender button instead of white, for the one that matters most right now
 };
 
+export type DiscountCode = {
+  brand: string;
+  code: string;
+  deal: string; // e.g. "15% off your first order"
+  url: string; // the brand's shop
+};
+
 export const links = {
-  avatar: "/images/shade-avatar.jpg",
+  avatar: "/images/shade-avatar-green.jpg",
   intro: "Mom of three (and one on the way!) sharing motherhood, eczema life, and the things we actually love.",
 
-  // The two big cards at the top: her worlds.
-  tabs: [
-    {
-      title: "My Profile",
-      caption: "UGC portfolio, brand work & stats",
-      href: "/profile",
-      photo: "/images/shade-family-cutout.png",
-      cutout: true, // a cutout photo sits on a lavender arch instead of filling the card
-    },
-    {
-      title: "My World",
-      caption: "Our routine, favorites & codes",
-      href: "/my-world",
-      photo: "/images/shade-hero.jpg",
-    },
-  ],
+  // The big card at the top.
+  portfolio: {
+    title: "My Portfolio",
+    caption: "UGC work, brand collabs & stats",
+    href: "/profile",
+    photo: "/images/shade-family-cutout.png",
+  },
 
-  links: [
-    // For brands
-    { label: "Work with me", note: "UGC & brand collaborations", href: "/contact", icon: "briefcase", highlight: true },
-    { label: "Media kit & rates", note: "Audience, stats & packages (PDF)", href: "", icon: "file" },
-    { label: "My best-performing reel", note: "206.7K views, no paid promotion", href: "https://www.instagram.com/reel/DeVmd5apWRV/", icon: "play" },
+  amazon: { label: "My Amazon storefront", note: "Our favorites, all in one place", href: "https://www.amazon.com/shop/shademomodu?tag=folashademomo-20", icon: "amazon" } satisfies HubLink,
 
-    // For her community
-    { label: "The Eczema Mama Guide", note: "Join the waitlist", href: "/my-world#guide", icon: "book" },
-    { label: "Shop my favorites", note: "Tried, tested & loved", href: "/my-world#shop", icon: "bag" },
-    { label: "Discount codes", note: "A little something off", href: "/my-world#codes", icon: "tag" },
-    { label: "My Amazon storefront", note: "", href: "", icon: "amazon" },
-    { label: "Shop my LTK", note: "", href: "", icon: "heart" },
-    { label: "TikTok Shop showcase", note: "", href: "", icon: "star" },
-  ] satisfies HubLink[],
+  // Shown in the "Discount codes" dropdown. Add one line per code, e.g.
+  // { brand: "Chilli Swim", code: "SHADE15", deal: "15% off your order", url: "https://..." },
+  codes: [] as DiscountCode[],
 };

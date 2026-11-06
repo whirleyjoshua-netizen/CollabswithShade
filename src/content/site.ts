@@ -29,10 +29,10 @@ export const site = {
     { name: "Ocean Olive", url: "https://www.instagram.com/ocean_olive_/", logo: "/images/brands/ocean-olive.jpg" },
     { name: "Chilli Swim", url: "https://www.instagram.com/chilliswimwear/", logo: "/images/brands/chilli-swim.jpg" },
     { name: "Renovera", url: "https://www.instagram.com/the_renoveraworld.official/", logo: "/images/brands/renovera.jpg" },
-    { name: "Mama Bird", url: "https://www.lovemamabird.com/", logo: "/images/brands/mama-bird.png", fit: "contain" },
+    { name: "Forever Little", url: "https://www.instagram.com/foreverlittledotcom/", logo: "/images/brands/forever-little.jpg" },
   ],
 
-  // The premier video, shown large with its stats (from Instagram Insights, Oct 2026).
+  // The premier video, shown large with its stats (from Instagram Insights, Nov 5 2026).
   featuredVideo: {
     title: "An allergy mom won't tell you she's an allergy mom…",
     brand: "Food allergy life",
@@ -46,10 +46,10 @@ export const site = {
     poster: "/videos/allergy-mom.jpg",
     url: "https://www.instagram.com/reel/DeVmd5apWRV/",
     stats: [
-      { value: "206.7K", label: "Views" },
-      { value: "101.5K", label: "Viewers" },
-      { value: "6.2K", label: "Likes" },
-      { value: "939", label: "Profile visits" },
+      { value: "255.8K", label: "Views" },
+      { value: "124.8K", label: "Viewers" },
+      { value: "8.5K", label: "Likes" },
+      { value: "106", label: "New follows" },
     ],
   },
 
@@ -58,9 +58,9 @@ export const site = {
   // Leave views empty to show "Watch on Instagram" instead of a count.
   brandVideos: [
     { title: "Little wins with sensitive skin", category: "Ocean Olive", views: "25.9K", url: "https://www.instagram.com/reel/DWotw6DgEYc/", src: "/videos/ocean-olive-little-wins.mp4", poster: "/videos/ocean-olive-little-wins.jpg" },
-    { title: "Finally, swimwear that protects her skin", category: "Chilli Swim", views: "5.2K", url: "https://www.instagram.com/reel/Dai0aeAB998/", src: "/videos/chilli-swim-pool-days.mp4", poster: "/videos/chilli-swim-pool-days.jpg" },
     { title: "The perfect eczema-friendly swimsuit doesn’t exist… or does it?", category: "Chilli Swim", views: "4.5K", url: "https://www.instagram.com/reel/Da04fFBhvM_/", src: "/videos/chilli-swim-eczema-swimsuit.mp4", poster: "/videos/chilli-swim-eczema-swimsuit.jpg" },
     { title: "Mom life: special fruit wash, no regrets", category: "Renovera", views: "2.4K", url: "https://www.instagram.com/reel/DZA-QwWhbrZ/", src: "/videos/renovera-fruit-wash.mp4", poster: "/videos/renovera-fruit-wash.jpg" },
+    { title: "Finally added Dad to the vitamin rotation", category: "First Day", views: "", url: "https://www.instagram.com/reel/DfQHvdiSoDh/", src: "/videos/first-day-dad-vitamins.mp4", poster: "/videos/first-day-dad-vitamins.jpg" },
   ],
 
   // "No brief, just creativity": her own videos, no brand behind them.

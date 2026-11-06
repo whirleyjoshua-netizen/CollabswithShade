@@ -3,8 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { site } from "@/content/site";
 import { links, type HubLink, type LinkIcon } from "@/content/links";
-import { Heart, Sparkle, Wash } from "@/components/Decor";
+import { Sparkle, Wash } from "@/components/Decor";
 import { SocialDiscs } from "@/components/SocialButtons";
+import { CodesDropdown } from "@/components/CodesDropdown";
 
 export const metadata: Metadata = {
   title: `${site.fullName} | ${site.tagline}`,
@@ -55,8 +56,6 @@ function LinkButton({ link }: { link: HubLink }) {
 }
 
 export default function Hub() {
-  const visible = links.links.filter((l) => l.href);
-
   return (
     <main className="ombre relative flex-1 overflow-hidden">
       <Wash className="-top-24 -left-32 h-80 w-80" />
@@ -80,47 +79,33 @@ export default function Hub() {
         <p className="mt-1 text-xs font-semibold uppercase tracking-[0.3em] text-mocha">{site.location}</p>
         <p className="mx-auto mt-4 max-w-xs text-sm leading-relaxed text-muted">{links.intro}</p>
         <SocialDiscs size="sm" className="mt-5" />
+        <a
+          href={`mailto:${site.email}?subject=${encodeURIComponent("Let's work together")}`}
+          className="mt-5 inline-flex items-center gap-2 rounded-full border border-gold bg-[radial-gradient(circle_at_30%_20%,#efe4f7_0%,#cbb8de_70%)] px-6 py-3 text-sm font-semibold uppercase tracking-[0.15em] shadow-[0_8px_20px_-12px_rgba(90,60,30,0.45)] transition hover:-translate-y-0.5"
+        >
+          <svg viewBox="0 0 24 24" className="h-4 w-4 fill-none stroke-ink" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            {iconPaths.mail}
+          </svg>
+          Let&rsquo;s work together
+        </a>
+        <p className="mt-2 text-xs text-muted select-all">{site.email}</p>
 
-        {/* Her two worlds */}
-        <nav aria-label="Explore" className="mt-10 grid grid-cols-2 gap-4">
-          {links.tabs.map((t) => (
-            <Link
-              key={t.href}
-              href={t.href}
-              className="group relative block aspect-[3/4] overflow-hidden rounded-[2rem] border-4 border-white bg-[radial-gradient(circle_at_50%_30%,#efe4f7_0%,#cbb8de_60%,#a888c0_100%)] shadow-[0_20px_40px_-20px_rgba(90,60,120,0.7)] ring-2 ring-gold/60 transition hover:-translate-y-1"
-            >
-              {"cutout" in t && t.cutout ? (
-                <Image src={t.photo} alt="" fill className="object-contain object-bottom pt-4 drop-shadow-lg transition group-hover:scale-[1.03]" sizes="14rem" />
-              ) : (
-                <Image src={t.photo} alt="" fill className="object-cover object-top transition group-hover:scale-[1.03]" sizes="14rem" />
-              )}
-              <span className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/80 via-ink/40 to-transparent px-3 pt-12 pb-4 text-cream">
-                <span className="font-script block text-4xl leading-none">{t.title}</span>
-                <span className="mt-1 block text-[0.6rem] font-semibold uppercase tracking-[0.15em] text-cream/85">{t.caption}</span>
-              </span>
-            </Link>
-          ))}
-        </nav>
+        {/* Portfolio */}
+        <Link
+          href={links.portfolio.href}
+          className="group relative mt-10 block aspect-[4/3] overflow-hidden rounded-[2rem] border-4 border-white bg-[radial-gradient(circle_at_50%_30%,#efe4f7_0%,#cbb8de_60%,#a888c0_100%)] shadow-[0_20px_40px_-20px_rgba(90,60,120,0.7)] ring-2 ring-gold/60 transition hover:-translate-y-1"
+        >
+          <Image src={links.portfolio.photo} alt="" fill priority className="object-contain object-bottom pt-4 drop-shadow-lg transition group-hover:scale-[1.03]" sizes="28rem" />
+          <span className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/80 via-ink/40 to-transparent px-3 pt-12 pb-4 text-cream">
+            <span className="font-title block text-4xl leading-none uppercase">{links.portfolio.title}</span>
+            <span className="mt-1 block text-[0.65rem] font-semibold uppercase tracking-[0.15em] text-cream/85">{links.portfolio.caption}</span>
+          </span>
+        </Link>
 
         {/* Links */}
-        <div className="mt-10 grid gap-3 text-left">
-          {visible.map((l) => (
-            <LinkButton key={l.label} link={l} />
-          ))}
-          <LinkButton link={{ label: "Email me", note: site.email, href: `mailto:${site.email}`, icon: "mail" }} />
-        </div>
-
-        {/* Brands */}
-        <p className="font-script mt-12 text-4xl text-mocha">
-          In good company
-          <Heart className="ml-2 inline-block h-6 w-6 -translate-y-2" />
-        </p>
-        <div className="mt-4 flex justify-center gap-3">
-          {site.brands.map((b) => (
-            <a key={b.name} href={b.url} target="_blank" rel="noreferrer" aria-label={b.name} className="relative h-14 w-14 overflow-hidden rounded-full bg-white shadow ring-2 ring-lavender-light transition hover:-translate-y-0.5 hover:ring-lavender">
-              <Image src={b.logo} alt={b.name} fill className={"fit" in b && b.fit === "contain" ? "object-contain p-1" : "object-cover"} sizes="3.5rem" />
-            </a>
-          ))}
+        <div className="mt-8 grid gap-3 text-left">
+          <LinkButton link={links.amazon} />
+          <CodesDropdown codes={links.codes} />
         </div>
 
         <p className="mt-12 text-xs text-muted">© {site.fullName} · {site.location}</p>
