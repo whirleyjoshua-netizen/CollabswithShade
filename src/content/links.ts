@@ -33,5 +33,8 @@ export const links = {
 
   // Shown in the "Discount codes" dropdown. Add one line per code, e.g.
   // { brand: "Chilli Swim", code: "SHADE15", deal: "15% off your order", url: "https://..." },
-  codes: [] as DiscountCode[],
+  codes: [
+    { brand: "Ready, Set, Food!", code: "SHADE15", deal: "15% off your order", url: "https://readysetfood.com/SHADE15" },
+    { brand: "RYZE", code: "SHADEMOMODU15", deal: "15% off your order", url: "https://get.aspr.app/SH2BN5" },
+  ] as DiscountCode[],
 };
