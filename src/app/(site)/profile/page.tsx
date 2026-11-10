@@ -234,7 +234,7 @@ export default function ProfilePage() {
         <Sparkle className="absolute top-32 left-[12%] h-4 w-4" />
         <div className="relative mx-auto max-w-6xl px-5">
           <SectionTitle title="No Brief, Just Creativity" script="Original content, everyday moments & a little personality" center />
-          <VideoGrid videos={site.creativeVideos} className="md:grid-cols-4" />
+          <VideoGrid videos={site.creativeVideos} className="md:grid-cols-5" />
         </div>
       </section>
 
