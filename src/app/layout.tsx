@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Anton, Lora, Montserrat, Sacramento } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import { site } from "@/content/site";
 import "./globals.css";
 
@@ -37,6 +38,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html lang="en" className={`${display.variable} ${script.variable} ${title.variable} ${body.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col font-sans">
         {children}
+        <Analytics />
       </body>
     </html>
   );
