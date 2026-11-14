@@ -54,7 +54,7 @@ export const site = {
 
   // "Brands I've had the pleasure of working with": the brand videos, in a row.
   // Entries with an empty src show a placeholder card linking to the post.
-  // Leave views empty to show "Watch on Instagram" instead of a count.
+  // Cards always show "Watch on Instagram"; views are kept here for reference only.
   brandVideos: [
     { title: "Little wins with sensitive skin", category: "Ocean Olive", views: "25.9K", url: "https://www.instagram.com/reel/DWotw6DgEYc/", src: "/videos/ocean-olive-little-wins.mp4", poster: "/videos/ocean-olive-little-wins.jpg" },
     { title: "The perfect eczema-friendly swimsuit doesn’t exist… or does it?", category: "Chilli Swim", views: "4.5K", url: "https://www.instagram.com/reel/Da04fFBhvM_/", src: "/videos/chilli-swim-eczema-swimsuit.mp4", poster: "/videos/chilli-swim-eczema-swimsuit.jpg" },
@@ -68,7 +68,6 @@ export const site = {
     { title: "Eczema mama in the summertime", category: "Eczema journey", views: "30.4K", url: "https://www.instagram.com/reel/DWCC4NPicqe/", src: "/videos/eczema-summer.mp4", poster: "/videos/eczema-summer.jpg" },
     { title: "To the mama up all night researching", category: "Motherhood", views: "22.9K", url: "https://www.instagram.com/reel/DaYPPtxJJam/", src: "/videos/mama-up-all-night.mp4", poster: "/videos/mama-up-all-night.jpg" },
     { title: "Advocating for my baby", category: "Motherhood", views: "19K", url: "https://www.instagram.com/reel/DYpWFwkBGOG/", src: "/videos/advocating-for-my-baby.mp4", poster: "/videos/advocating-for-my-baby.jpg" },
-    { title: "The good-skin-day gamble", category: "Eczema journey", views: "17.7K", url: "https://www.instagram.com/reel/DWiEG2gid89/", src: "/videos/good-skin-day.mp4", poster: "/videos/good-skin-day.jpg" },
   ],
 
   // Photos on the purple-and-gold film strip on the contact page.
