@@ -194,7 +194,7 @@ export default function ProfilePage() {
           <div>
             <SectionTitle title={<>Where Experience<br />Meets Impact</>} />
             <p className="-mt-4 text-lg leading-relaxed text-muted">{featured.story}</p>
-            <dl className="mt-8 grid grid-cols-2 gap-y-5 rounded-3xl bg-lavender/60 px-4 py-5 text-center sm:grid-cols-4 sm:divide-x sm:divide-ink/15">
+            <dl className={`mt-8 grid gap-y-5 rounded-3xl bg-lavender/60 px-4 py-5 text-center ${featured.stats.length === 3 ? "grid-cols-3" : "grid-cols-2 sm:grid-cols-4"} sm:divide-x sm:divide-ink/15`}>
               {featured.stats.map((s) => (
                 <div key={s.label} className="px-2">
                   <dd className="font-title text-3xl">{s.value}</dd>

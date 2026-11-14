@@ -32,24 +32,23 @@ export const site = {
     { name: "Forever Little", url: "https://www.instagram.com/foreverlittledotcom/", logo: "/images/brands/forever-little.jpg" },
   ],
 
-  // The premier video, shown large with its stats (from Instagram Insights, Nov 5 2026).
+  // The premier video, shown large with its stats (public counts from Instagram, Nov 14 2026).
   featuredVideo: {
-    title: "An allergy mom won't tell you she's an allergy mom…",
+    title: "Tell me you're an allergy mom…",
     brand: "Food allergy life",
     description:
-      "One thing about Evie… she LOVES to eat, and she couldn't care less that her food looks different from everyone else's. A real look at packing safe meals for every outing.",
+      "A Costco food court lunch, allergy-mom style: pizza for one, packed safe snacks for the other. If you know, you know.",
     // Shown under "Where Experience Meets Impact".
     story:
-      "Eczema and food allergy awareness are especially close to my heart and have become a specialty in my content creation. This simple, relatable moment of motherhood turned into one of my highest-performing reels, reaching thousands of parents who could relate.",
+      "Eczema and food allergy awareness are especially close to my heart and have become a specialty in my content creation. This simple, relatable moment of motherhood became my highest-performing reel, reaching hundreds of thousands of parents who could relate.",
     note: "No paid promotion. Just content that connected.",
-    src: "/videos/allergy-mom.mp4",
-    poster: "/videos/allergy-mom.jpg",
-    url: "https://www.instagram.com/reel/DeVmd5apWRV/",
+    src: "/videos/tell-me-allergy-mom.mp4",
+    poster: "/videos/tell-me-allergy-mom.jpg",
+    url: "https://www.instagram.com/reel/DfqTpashb68/",
     stats: [
-      { value: "255.8K", label: "Views" },
-      { value: "124.8K", label: "Viewers" },
-      { value: "8.5K", label: "Likes" },
-      { value: "106", label: "New follows" },
+      { value: "853K", label: "Views" },
+      { value: "58.9K", label: "Likes" },
+      { value: "246", label: "Comments" },
     ],
   },
 
