@@ -32,7 +32,7 @@ export const site = {
     { name: "Forever Little", url: "https://www.instagram.com/foreverlittledotcom/", logo: "/images/brands/forever-little.jpg" },
   ],
 
-  // The premier video, shown large with its stats (public counts from Instagram, Nov 14 2026).
+  // The premier video, shown large with its stats (public counts from Instagram, Nov 17 2026).
   featuredVideo: {
     title: "Tell me you're an allergy mom…",
     brand: "Food allergy life",
@@ -40,15 +40,15 @@ export const site = {
       "A Costco food court lunch, allergy-mom style: pizza for one, packed safe snacks for the other. If you know, you know.",
     // Shown under "Where Experience Meets Impact".
     story:
-      "Eczema and food allergy awareness are especially close to my heart and have become a specialty in my content creation. This simple, relatable moment of motherhood became my highest-performing reel, reaching hundreds of thousands of parents who could relate.",
+      "Eczema and food allergy awareness are especially close to my heart and have become a specialty in my content creation. This simple, relatable moment of motherhood became my highest-performing reel, with over a million views from parents who could relate.",
     note: "No paid promotion. Just content that connected.",
     src: "/videos/tell-me-allergy-mom.mp4",
     poster: "/videos/tell-me-allergy-mom.jpg",
     url: "https://www.instagram.com/reel/DfqTpashb68/",
     stats: [
-      { value: "853K", label: "Views" },
-      { value: "58.9K", label: "Likes" },
-      { value: "246", label: "Comments" },
+      { value: "1M", label: "Views" },
+      { value: "66K", label: "Likes" },
+      { value: "226", label: "Comments" },
     ],
   },
 
