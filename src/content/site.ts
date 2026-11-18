@@ -51,7 +51,7 @@ export const site = {
       { value: "1M", label: "Views" },
       { value: "534K", label: "Viewers" },
       { value: "67.4K", label: "Likes" },
-      { value: "269", label: "Comments" },
+      { value: "270", label: "Comments" },
       { value: "1K", label: "Reposts" },
       { value: "918", label: "Shares" },
       { value: "758", label: "Saves" },
