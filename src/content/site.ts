@@ -46,7 +46,8 @@ export const site = {
     poster: "/videos/tell-me-allergy-mom.jpg",
     url: "https://www.instagram.com/reel/DfqTpashb68/",
     stats: [
-      // From Shadé's Reel Insights, Nov 18 2026 (views from the Insights graph; crossposted to Facebook).
+      // Views, likes, comments auto-updated Nov 18 2026 (scripts/update-reel-stats.py, every 2 days).
+      // The rest are from Shadé's Reel Insights, Nov 18 2026; update by hand from a new screenshot.
       { value: "1M", label: "Views" },
       { value: "534K", label: "Viewers" },
       { value: "67.4K", label: "Likes" },
