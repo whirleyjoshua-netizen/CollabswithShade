@@ -46,9 +46,16 @@ export const site = {
     poster: "/videos/tell-me-allergy-mom.jpg",
     url: "https://www.instagram.com/reel/DfqTpashb68/",
     stats: [
+      // From Shadé's Reel Insights, Nov 18 2026 (views from the Insights graph; crossposted to Facebook).
       { value: "1M", label: "Views" },
-      { value: "66K", label: "Likes" },
-      { value: "226", label: "Comments" },
+      { value: "534K", label: "Viewers" },
+      { value: "67.4K", label: "Likes" },
+      { value: "269", label: "Comments" },
+      { value: "1K", label: "Reposts" },
+      { value: "918", label: "Shares" },
+      { value: "758", label: "Saves" },
+      { value: "153", label: "Follows" },
+      { value: "13s", label: "Avg watch" },
     ],
   },
 
