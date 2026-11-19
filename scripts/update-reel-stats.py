@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Refresh the featured reel's public stats (views, likes, comments) on the profile page.
+"""Refresh the featured reel's public stats (views, likes) on the profile page.
 
 Runs every 2 days via launchd (~/Library/LaunchAgents/com.collabswithshade.reel-stats.plist).
 Reads the reel with yt-dlp using Chrome's Instagram login, updates src/content/site.ts,
@@ -75,7 +75,7 @@ def main():
         return
 
     today = datetime.date.today().strftime("%b %-d %Y")
-    new_block = re.sub(r"(Views, likes, comments auto-updated )[A-Za-z]+ \d+ \d{4}", rf"\g<1>{today}", new_block)
+    new_block = re.sub(r"(Views, likes auto-updated )[A-Za-z]+ \d+ \d{4}", rf"\g<1>{today}", new_block)
     SITE.write_text(text[:start] + new_block + text[end:])
     log("Updated site.ts; building…")
 
