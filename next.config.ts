@@ -7,6 +7,10 @@ const nextConfig: NextConfig = {
   experimental: {
     agentUpgrade: "security",
   },
+  // The portfolio used to live at /profile; keep old links (sent to brands) working.
+  async redirects() {
+    return [{ source: "/profile", destination: "/portfolio", permanent: true }];
+  },
   turbopack: {
     rules: {
       "*.css": {

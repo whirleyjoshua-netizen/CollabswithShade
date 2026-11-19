@@ -25,7 +25,7 @@ export const links = {
   portfolio: {
     title: "My Portfolio",
     caption: "UGC work, brand collabs & stats",
-    href: "/profile",
+    href: "/portfolio",
     photo: "/images/shade-family-cutout.png",
   },
 

@@ -94,7 +94,7 @@ const processIcons = [
 ];
 
 export const metadata: Metadata = {
-  title: "Profile | Collabs with Shadé",
+  title: "Portfolio | Collabs with Shadé",
   description: site.hero.bio,
 };
 
