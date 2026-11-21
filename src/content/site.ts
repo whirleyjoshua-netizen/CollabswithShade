@@ -64,7 +64,6 @@ export const site = {
     { title: "Little wins with sensitive skin", category: "Ocean Olive", views: "25.9K", url: "https://www.instagram.com/reel/DWotw6DgEYc/", src: "/videos/ocean-olive-little-wins.mp4", poster: "/videos/ocean-olive-little-wins.jpg" },
     { title: "The perfect eczema-friendly swimsuit doesn’t exist… or does it?", category: "Chilli Swim", views: "4.5K", url: "https://www.instagram.com/reel/Da04fFBhvM_/", src: "/videos/chilli-swim-eczema-swimsuit.mp4", poster: "/videos/chilli-swim-eczema-swimsuit.jpg" },
     { title: "Finally added Dad to the vitamin rotation", category: "First Day", views: "", url: "https://www.instagram.com/reel/DfQHvdiSoDh/", src: "/videos/first-day-dad-vitamins.mp4", poster: "/videos/first-day-dad-vitamins.jpg" },
-    { title: "I'm picky about Evie's jammies", category: "Little Buddha", views: "", url: "https://www.instagram.com/reel/Df_DOLUhbK5/", src: "/videos/little-buddha-jammies.mp4", poster: "/videos/little-buddha-jammies.jpg" },
   ],
 
   // "No brief, just creativity": her own videos, no brand behind them.
@@ -72,6 +71,7 @@ export const site = {
     { title: "The most used item in our house", category: "Eczema journey", views: "", url: "https://www.instagram.com/reel/DfihzbCpJTr/", src: "/videos/briotech-most-used.mp4", poster: "/videos/briotech-most-used.jpg" },
     { title: "Eczema mama in the summertime", category: "Eczema journey", views: "30.4K", url: "https://www.instagram.com/reel/DWCC4NPicqe/", src: "/videos/eczema-summer.mp4", poster: "/videos/eczema-summer.jpg" },
     { title: "Allergy-friendly staples on a budget", category: "Food allergy life", views: "", url: "https://www.instagram.com/reel/DfoEsSNpEG0/", src: "/videos/sams-club-allergy-staples.mp4", poster: "/videos/sams-club-allergy-staples.jpg" },
+    { title: "I'm picky about Evie's jammies", category: "Little Buddha", views: "", url: "https://www.instagram.com/reel/Df_DOLUhbK5/", src: "/videos/little-buddha-jammies.mp4", poster: "/videos/little-buddha-jammies.jpg" },
   ],
 
   // Photos on the purple-and-gold film strip on the contact page.

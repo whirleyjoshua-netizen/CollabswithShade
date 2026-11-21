@@ -49,11 +49,13 @@ function PhoneFrame({ src, poster, views }: { src: string; poster: string; views
 }
 
 /** A straight row of framed video cards. */
-function VideoGrid({ videos, className }: { videos: Video[]; className: string }) {
+// Flex-wrap instead of grid so a short last row (e.g. 3 videos) sits centered.
+// Widths: 2 per row on phones, 4 per row from md, accounting for the gaps.
+function VideoGrid({ videos }: { videos: Video[] }) {
   return (
-    <div className={`grid grid-cols-2 gap-5 sm:gap-6 ${className}`}>
+    <div className="flex flex-wrap justify-center gap-5 sm:gap-6">
       {videos.map((v) => (
-        <figure key={v.title}>
+        <figure key={v.title} className="w-[calc(50%-0.625rem)] sm:w-[calc(50%-0.75rem)] md:w-[calc(25%-1.125rem)]">
           <div className="rounded-2xl bg-white p-2 shadow-[0_10px_30px_-12px_rgba(26,26,26,0.35)]">
             <VideoFrame src={v.src} poster={v.poster} url={v.url} className="rounded-xl" />
           </div>
@@ -223,7 +225,7 @@ export default function ProfilePage() {
         <Sparkle className="absolute top-28 right-[9%] h-4 w-4" />
         <div className="mx-auto max-w-6xl px-5">
           <SectionTitle title="Featured Collaborations" script="A collection of my brand content" center />
-          <VideoGrid videos={site.brandVideos} className="md:grid-cols-4" />
+          <VideoGrid videos={site.brandVideos} />
         </div>
       </section>
 
@@ -234,7 +236,7 @@ export default function ProfilePage() {
         <Sparkle className="absolute top-32 left-[12%] h-4 w-4" />
         <div className="relative mx-auto max-w-6xl px-5">
           <SectionTitle title="No Brief, Just Creativity" script="Original content, everyday moments & a little personality" center />
-          <VideoGrid videos={site.creativeVideos} className="md:grid-cols-4" />
+          <VideoGrid videos={site.creativeVideos} />
         </div>
       </section>
 
