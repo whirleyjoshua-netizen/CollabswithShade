@@ -64,6 +64,7 @@ export const site = {
     { title: "Little wins with sensitive skin", category: "Ocean Olive", views: "25.9K", url: "https://www.instagram.com/reel/DWotw6DgEYc/", src: "/videos/ocean-olive-little-wins.mp4", poster: "/videos/ocean-olive-little-wins.jpg" },
     { title: "The perfect eczema-friendly swimsuit doesn’t exist… or does it?", category: "Chilli Swim", views: "4.5K", url: "https://www.instagram.com/reel/Da04fFBhvM_/", src: "/videos/chilli-swim-eczema-swimsuit.mp4", poster: "/videos/chilli-swim-eczema-swimsuit.jpg" },
     { title: "Finally added Dad to the vitamin rotation", category: "First Day", views: "", url: "https://www.instagram.com/reel/DfQHvdiSoDh/", src: "/videos/first-day-dad-vitamins.mp4", poster: "/videos/first-day-dad-vitamins.jpg" },
+    { title: "I'm picky about Evie's jammies", category: "Little Buddha", views: "", url: "https://www.instagram.com/reel/Df_DOLUhbK5/", src: "/videos/little-buddha-jammies.mp4", poster: "/videos/little-buddha-jammies.jpg" },
   ],
 
   // "No brief, just creativity": her own videos, no brand behind them.
@@ -72,6 +73,7 @@ export const site = {
     { title: "Eczema mama in the summertime", category: "Eczema journey", views: "30.4K", url: "https://www.instagram.com/reel/DWCC4NPicqe/", src: "/videos/eczema-summer.mp4", poster: "/videos/eczema-summer.jpg" },
     { title: "To the mama up all night researching", category: "Motherhood", views: "22.9K", url: "https://www.instagram.com/reel/DaYPPtxJJam/", src: "/videos/mama-up-all-night.mp4", poster: "/videos/mama-up-all-night.jpg" },
     { title: "Advocating for my baby", category: "Motherhood", views: "19K", url: "https://www.instagram.com/reel/DYpWFwkBGOG/", src: "/videos/advocating-for-my-baby.mp4", poster: "/videos/advocating-for-my-baby.jpg" },
+    { title: "Allergy-friendly staples on a budget", category: "Food allergy life", views: "", url: "https://www.instagram.com/reel/DfoEsSNpEG0/", src: "/videos/sams-club-allergy-staples.mp4", poster: "/videos/sams-club-allergy-staples.jpg" },
   ],
 
   // Photos on the purple-and-gold film strip on the contact page.
